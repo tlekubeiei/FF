@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <button type="submit">แจ้งเกรียน</button>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>แจ้งผู้เล่นเกรียน (UID)</h1>
+    <form id="report-form">
+      <input type="text" name="uid" placeholder="กรอก UID" required />
+      <textarea name="reason" placeholder="แจ้งเหตุผล (ระบุรายละเอียด)" required style="width:100%;height:80px;margin-top:15px;padding:10px;border-radius:8px;border:none;"></textarea>
+      <input type="file" name="image" accept="image/*" />
+      <button type="submit">แจ้งเกรียน</button>
+    </form>
+    <p id="result"></p>
+    <button id="viewReportsBtn" style="margin-top:20px;">ดูรายงานทั้งหมด / ค้นหา UID</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
